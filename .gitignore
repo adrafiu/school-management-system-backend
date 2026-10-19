@@ -1,0 +1,37 @@
+cat > .gitignore <<'EOF'
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django database
+db.sqlite3
+db.sqlite3-journal
+
+# Uploaded and collected files
+media/
+staticfiles/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Linters and type checkers
+.mypy_cache/
+.ruff_cache/
+
+# Editor and operating system
+.vscode/
+.idea/
+.DS_Store
